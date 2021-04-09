@@ -2,8 +2,8 @@ class Question {
 
   constructor() {
     this.title = createElement('h1')
-    this.input1 = createInput("Enter Your Name Here....");
-    this.input2 = createInput("Enter Correct Option No..");
+    this.input1 = createInput("Name Please!");
+    this.input2 = createInput("Your Answer!");
     this.button = createButton('Submit');
     this.question = createElement('h3');
     this.option1 = createElement('h4');
@@ -52,3 +52,4 @@ class Question {
     });
   }
 }
+
