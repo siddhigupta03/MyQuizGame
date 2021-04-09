@@ -42,16 +42,18 @@ class Quiz {
       fill("blue");
       textSize(20);
       text("*Note, the contastant who answered correctly are highlighted in green.",130,230);
-          for (var con in allContestants) {
-            if(con === "contestant"+ contestant.index) {
+          for(var con in allContestants){
+            if(allContestants !== undefined) {
               var corAns = "2";
               if(corAns === allContestants[con].answer){
                 fill("green")
-                text(allContestants[con].name+": "+allContestants[con].answer,260,300);
+                textSize(25);
+                text(allContestants[con].name+": "+allContestants[con].answer,300,300);
           }
           else {
               fill ("red");
-              text(allContestants[con].name+": "+allContestants[con].answer,260,300);
+              textSize(25);
+              text(allContestants[con].name+": "+allContestants[con].answer,300,350);
             }
             if(contestant.index!==null) {
               contestant.update(); 
@@ -61,3 +63,4 @@ class Quiz {
       }
     }
   }
+
